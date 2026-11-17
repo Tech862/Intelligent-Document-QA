@@ -1,0 +1,289 @@
+.upload-dropzone {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 15px 17px;
+  border: 1px dashed rgba(126, 205, 198, .28);
+  border-radius: 4px;
+  background: radial-gradient(ellipse at 0 50%, rgba(71, 148, 141, .09), transparent 48%), rgba(14, 32, 40, .58);
+  transition: border-color .2s, background .2s;
+}
+
+.upload-dropzone.is-dragging {
+  border-color: #82ded5;
+  background: rgba(87, 173, 165, .11);
+}
+
+.upload-drop-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: #8bded5;
+  border: 1px solid rgba(125, 214, 207, .17);
+  border-radius: 4px;
+  background: rgba(92, 178, 171, .1);
+}
+
+.upload-drop-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.upload-drop-copy strong {
+  color: #cbdad5;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.upload-drop-copy small {
+  color: #82989b;
+  font-size: 7px;
+}
+
+.upload-drop-copy button {
+  padding: 0;
+  color: #8ce0d7;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.upload-drop-copy button:hover {
+  color: #c1f1e9;
+}
+
+.upload-dropzone .button {
+  min-height: 32px;
+  margin-left: auto;
+  padding: 0 10px;
+  font-size: 8px;
+}
+
+.upload-job-list {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.upload-job {
+  padding: 12px 14px;
+  border: 1px solid rgba(174, 205, 211, .13);
+  border-radius: 4px;
+  background: rgba(15, 32, 40, .78);
+}
+
+.upload-job-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.upload-job-head .recent-file-icon {
+  width: 27px;
+  height: 29px;
+}
+
+.upload-job-file {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.upload-job-file strong {
+  overflow: hidden;
+  color: #d2ded9;
+  font-size: 8px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-job-file small {
+  color: #7e9497;
+  font-size: 7px;
+}
+
+.upload-job-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  color: #8dcfc1;
+  font-size: 7px;
+  white-space: nowrap;
+}
+
+.upload-job-state .spinner {
+  width: 12px;
+  height: 12px;
+}
+
+.upload-job-failed .upload-job-state {
+  color: #ee9d95;
+}
+
+.upload-transfer-row {
+  display: grid;
+  grid-template-columns: auto minmax(70px, 1fr) 30px;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 11px 36px;
+  color: #83999b;
+  font-size: 7px;
+}
+
+.upload-transfer-row progress {
+  width: 100%;
+  height: 4px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 5px;
+  background: #233a42;
+  accent-color: #7edbd1;
+}
+
+.upload-transfer-row progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background: #233a42;
+}
+
+.upload-transfer-row progress::-webkit-progress-value {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #76d8cc, #7fbce9);
+}
+
+.upload-transfer-row progress::-moz-progress-bar {
+  border-radius: 5px;
+  background: #76d8cc;
+}
+
+.upload-pipeline-steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px;
+  margin-left: 36px;
+}
+
+.upload-pipeline-step {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #657c80;
+  font-size: 6px;
+  line-height: 1.35;
+}
+
+.upload-pipeline-step>i {
+  width: 13px;
+  height: 13px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: inherit;
+  border: 1px solid rgba(174, 205, 211, .15);
+  border-radius: 50%;
+  font-size: 6px;
+  font-style: normal;
+}
+
+.upload-pipeline-step.is-complete {
+  color: #84cdb5;
+}
+
+.upload-pipeline-step.is-complete>i {
+  color: #0b2726;
+  border-color: #82d9c1;
+  background: #82d9c1;
+}
+
+.upload-pipeline-step.is-current {
+  color: #a8e9df;
+}
+
+.upload-pipeline-step.is-current>i {
+  border-color: #79d9d0;
+  box-shadow: 0 0 9px rgba(121, 217, 208, .2);
+}
+
+.upload-job-error {
+  margin: 9px 0 0 36px;
+  color: #efa69e;
+  font-size: 7px;
+  line-height: 1.6;
+}
+
+.workspace-light .upload-dropzone,
+.workspace-light .upload-job {
+  border-color: rgba(54, 94, 97, .15);
+  background: rgba(249, 253, 250, .82);
+}
+
+.workspace-light .upload-drop-copy strong,
+.workspace-light .upload-job-file strong {
+  color: #345256;
+}
+
+.workspace-light .upload-drop-copy small,
+.workspace-light .upload-job-file small,
+.workspace-light .upload-transfer-row {
+  color: #698184;
+}
+
+.workspace-light .upload-pipeline-step {
+  color: #788f90;
+}
+
+.workspace-light .upload-pipeline-step.is-complete,
+.workspace-light .upload-pipeline-step.is-current {
+  color: #387e6b;
+}
+
+@media (max-width: 760px) {
+  .upload-dropzone {
+    min-height: 75px;
+    gap: 9px;
+    padding: 11px;
+  }
+
+  .upload-drop-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .upload-drop-copy strong {
+    font-size: 8px;
+  }
+
+  .upload-dropzone .button {
+    min-height: 29px;
+    gap: 5px;
+    padding: 0 7px;
+    font-size: 7px;
+  }
+
+  .upload-job {
+    padding: 10px;
+  }
+
+  .upload-transfer-row,
+  .upload-pipeline-steps,
+  .upload-job-error {
+    margin-left: 0;
+  }
+
+  .upload-pipeline-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 7px;
+  }
+
+  .upload-pipeline-step {
+    font-size: 6px;
+  }
+}

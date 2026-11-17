@@ -1,0 +1,165 @@
+body {
+    color: #20383e;
+    background: #edf3f1;
+}
+
+.auth-page.auth-light {
+    color: #20383e;
+    background: #eef4f1;
+}
+
+.auth-light .auth-left {
+    background: #f3f7f5;
+}
+
+.auth-light .auth-brand .brand-name {
+    color: #203a40;
+}
+
+.auth-light .back-link {
+    color: #60777a;
+}
+
+.auth-light .back-link:hover {
+    color: #183a40;
+}
+
+.auth-light .auth-form-wrap h1 {
+    color: #1c363d;
+}
+
+.auth-light .auth-intro {
+    color: #60777a;
+}
+
+.auth-light .auth-form label {
+    color: #38565b;
+}
+
+.auth-light .auth-form input:not([type="checkbox"]) {
+    color: #243f45;
+    border-color: rgba(54, 94, 97, .2);
+    background: #fbfdfb;
+}
+
+.auth-light .auth-form input::placeholder {
+    color: #869a9c;
+}
+
+.auth-light .password-toggle {
+    color: #688184;
+}
+
+.auth-light .auth-switch,
+.auth-light .auth-security {
+    color: #61797c;
+}
+
+.auth-light .auth-switch a {
+    color: #287c76;
+}
+
+.auth-light .auth-security svg {
+    color: #438b76;
+}
+
+.auth-light .auth-legal {
+    color: #73888b;
+}
+
+.auth-light .auth-right {
+    border-color: rgba(54, 94, 97, .13);
+    background: radial-gradient(ellipse at 56% 47%, rgba(87, 166, 159, .14), transparent 46%), #e7efec;
+}
+
+.auth-light .auth-art-glow {
+    border-color: rgba(63, 130, 128, .1);
+    box-shadow: 0 0 0 62px rgba(67, 135, 131, .025), 0 0 0 125px rgba(67, 135, 131, .02);
+}
+
+.auth-light .auth-manifesto h2 {
+    color: #1e3c42;
+}
+
+.auth-light .auth-manifesto h2 em {
+    color: #2c827a;
+}
+
+.auth-light .auth-manifesto p,
+.auth-light .auth-aside-bottom {
+    color: #5e787b;
+}
+
+.auth-light .auth-aside-bottom .footer-dot {
+    background: #418b70;
+}
+
+.auth-light .password-hint {
+    color: #758b8d;
+}
+
+.auth-light .auth-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: -3px;
+}
+
+.auth-light .auth-form .remember-option {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #60777a;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.auth-light .remember-option input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    accent-color: #33877f;
+}
+
+.auth-light .auth-options>a {
+    color: #317f78;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.auth-light .auth-complete {
+    display: grid;
+    justify-items: start;
+    gap: 12px;
+    margin-top: 26px;
+    padding: 17px;
+    border: 1px solid rgba(54, 121, 102, .17);
+    border-radius: 4px;
+    background: rgba(118, 180, 156, .1);
+}
+
+.auth-light .auth-complete-icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    color: #347c65;
+    border-radius: 50%;
+    background: rgba(96, 168, 139, .15);
+}
+
+.auth-light .auth-complete p {
+    margin: 0;
+    color: #3d615b;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.auth-light .auth-complete .button {
+    width: 100%;
+}
+
+.auth-light .form-error {
+    color: #ad4b43;
+}
